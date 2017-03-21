@@ -1,0 +1,5 @@
+title: Rulin Li /
+email: ruilin.li@gatech.edu
+markdown: redcarpet
+baseurl: /webpage
+exclude: ['README.md']
