@@ -1,5 +1,14 @@
-title: Rulin Li /
+title: Ruilin Li  &middot;  Machine Learning @ Georgia Tech
+
 email: ruilin.li@gatech.edu
+github: http://github.com/ruilin-li
+linkedin: https://www.linkedin.com/in/ruilin-li-b71448bb/
+office: Room 146B, Skiles Building, 686 Cherry St
+
 markdown: redcarpet
-baseurl: /webpage
+
+baseurl: /ruilin-li
+
+url: https://ruilin-li.github.io
+
 exclude: ['README.md']

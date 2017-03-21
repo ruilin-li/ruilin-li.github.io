@@ -2095,7 +2095,7 @@
 					background: #4acaa8;
 					border-radius: 100%;
 					color: #ffffff;
-					display: block;
+					display: inline-block;
 					height: 2.5em;
 					left: 0;
 					line-height: 2.5em;

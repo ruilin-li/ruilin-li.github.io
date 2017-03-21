@@ -1,0 +1,32 @@
+<!-- Contact -->
+	<section id="Contact">
+		<div class="container">
+			<h3>Contact</h3>
+			<p>Email: {{site.email}} <br>
+			Office: {{site.office}}</p>
+
+			<div id="map" style="width: auto; height: 400px; border-radius: 25x"></div>
+
+			<script>
+
+		    	function initMap() {
+		        	var myLatLng = {lat: 33.773574, lng: -84.395964};
+
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 16,
+			          center: myLatLng
+			        });
+
+			        var marker = new google.maps.Marker({
+			          position: myLatLng,
+			          map: map,
+			          title: 'Hello World!'
+			        });
+			      }
+		    </script>
+		    <script async defer
+		    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLlaBDQIbCprljj_ibIhmA_jsuNQoaDHk&callback=initMap">
+		    </script>
+
+		</div>
+	</section>
