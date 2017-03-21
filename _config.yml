@@ -9,6 +9,6 @@ markdown: redcarpet
 
 baseurl: /ruilin-li
 
-url: https://ruilin-li.github.io
+remoteurl: https://github.com/ruilin-li.github.io
 
 exclude: ['README.md']
