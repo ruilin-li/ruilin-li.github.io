@@ -5,7 +5,7 @@ github: http://github.com/ruilin-li
 linkedin: https://www.linkedin.com/in/ruilin-li-b71448bb/
 office: Room 146B, Skiles Building, 686 Cherry St
 
-markdown: redcarpet
+markdown: kramdown
 
 baseurl: /ruilin-li
 
