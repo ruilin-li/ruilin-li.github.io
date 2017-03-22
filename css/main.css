@@ -1582,7 +1582,7 @@
 		font-weight: 700;
 	}
 
-	em, i {
+	em {
 		font-style: italic;
 	}
 
@@ -1962,7 +1962,6 @@
 		}
 
 /* Icon */
-
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -1981,6 +1980,37 @@
 		.icon > .label {
 			display: none;
 		}
+
+
+	i+h3 {
+		  display: inline-block;
+		}
+
+	.icon-text {
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  /* edit this to change the size of the icon */
+	  display: inline-block;
+	  width: 3em;
+	  position: relative;
+	}
+
+	.icon-text:before {
+	  -moz-osx-font-smoothing: grayscale;
+	  -webkit-font-smoothing: antialiased;
+	  font-family: FontAwesome;
+	  font-style: normal;
+	  font-weight: normal;
+	  text-transform: none !important;
+	  background: #4acaa8;
+	  border-radius: 100%;
+	  color: #ffffff;
+	  display: inline-block;
+	  line-height: 2.5em;
+	  text-align: center;
+	  width: 2.5em;
+	}
+
 
 /* Image */
 

@@ -1,9 +1,24 @@
 <!-- Blog -->
 	<section id="Blog">
 		<div class="container">
-			<h3>Blogs <h3>
-			<ul class="feature-icons">
-				<li class="fa fa-rss" aria-hidden="true"></li>
-			</ul>
+				
+			<i class="icon-text fa-rss"></i> <h3>Blog</h3> 
+			
+			<div class="features">
+				{% for post in site.posts %}
+				    <article>
+				    	 <a href="#" class="image">
+				    	 	<img src="images/pic01.jpg">
+				    	 </a>
+				    	 <div class="inner">
+				    	 	 <h4><a href="./_posts/2017-03-22-Paper-Reading-Summary.md">{{ post.title }}</a></h4>
+				    	 	 {{ post.date | date_to_string }}
+				    	 </div>
+				    	<!--  <hr /> -->
+				    </article>
+				       
+				{% endfor %}
+			</div>
+				
 		</div>
 	</section>
