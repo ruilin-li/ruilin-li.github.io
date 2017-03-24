@@ -50,7 +50,11 @@
         <div id="wrapper">
             <!-- Main -->
             <div id="main">
-                <section>
+                <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async>
+</script>
+
+<section>
     <div class="container">
         <header class="major">
             <h2>One Paper a Day</h2>
@@ -58,20 +62,28 @@
         </header>
 
         <section class="post-content">
-            <p>Inspired by <a href="https://medium.com/@nealjean/2017-challenge-one-paper-a-day-9d7811accd09#.wqq4ozcim">Neal Jean’s post</a>, I decide to start my 2017 challenge, reading at least one paper a day. Try to keep track of the latest progress in the area of machine learning.</p>
+            <p>Inspired by <a href="https://medium.com/@nealjean/2017-challenge-one-paper-a-day-9d7811accd09#.wqq4ozcim">Neal Jean’s post</a>, I decide to start my 2017 challenge, try to read one paper per day to keep track of the latest progress in the area of machine learning.</p>
+
+<ul>
+  <li>
+    <h3 id="towards-principled-methods-for-training-generative-adversarial-networks"><a href="https://arxiv.org/pdf/1701.04862.pdf">Towards Principled Methods for Training Generative Adversarial Networks</a></h3>
+    <p>Martin Arjovsky, Léon Bottou - Read on Mar 23, 2017</p>
+  </li>
+</ul>
+
+<p>Even if the real data generating distribution <script type="math/tex">P_{real}</script> and the fake generating distribution <script type="math/tex">P_g</script> lie on two arbitrarily close manifolds, under mild conditions, 
+<script type="math/tex">JS(P_{real} || P_g) = \log 2</script>,
+meaning that essentially, this distance measure of two probability distributions is not ‘continuous’. Moreover, the existence of optimal discriminator causes vanishing gradients on genrator. When switching to <script type="math/tex">-\log D</script> alternative, the gradient has infinite variance, impling unstable training. The remedy could be either add noise to descriminator or using softer distance measure such as <em>Wasserstein</em>.</p>
 
 <ul>
   <li>
     <h3 id="wasserstein-gan"><a href="https://arxiv.org/pdf/1701.07875.pdf">Wasserstein GAN</a></h3>
-    <p>Martin Arjovsky, Soumith Chintala, L´eon Bottou - <strong>Mar 22, 2017</strong></p>
+    <p>Martin Arjovsky, Soumith Chintala, L´eon Bottou - Read on Mar 22, 2017</p>
   </li>
 </ul>
 
 <p><em>Wasserstein distance</em> is  weaker than <em>Total Variance Distance (TV)</em> and <em>Jenson-Shannon Divergence (JS)</em>. Moreover, all above three metric are weaker than <em>Kullback-Leibler Divergence (KL)</em>. A weaker distance metric induces a weaker topology in the space of all probability measures, a favorable setting for common gradient-based optimization algorithms, where convergence is easier in weak topology. The intractability of Wasserstein distance can be resolved by using <em>Kantorovich-Rubinstein duality</em> and then we can optimize it over parameterized functions. Empirical results show that WGAN enjoys strong stability and is more robust to various network architechtures.</p>
 
-<ul>
-  <li></li>
-</ul>
 
         </section>
         
