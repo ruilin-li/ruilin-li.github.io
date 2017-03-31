@@ -13,7 +13,7 @@ Martin Arjovsky, Léon Bottou - Read on Mar 23, 2017
 
 Even if the real data generating distribution $$P_{real}$$ and the fake generating distribution $$P_g$$ lie on two arbitrarily close manifolds, under mild conditions, 
 $$ JS(P_{real} || P_g) = \log 2 $$,
-meaning that essentially, this distance measure of two probability distributions is not 'continuous'. Moreover, the existence of optimal discriminator causes vanishing gradients on genrator. When switching to $$ -\log D $$ alternative, the gradient has infinite variance, impling unstable training. The remedy could be either add noise to descriminator or using softer distance measure such as _Wasserstein_.
+meaning that essentially, this distance measure of two probability distributions is not 'continuous'. Moreover, the existence of optimal discriminator causes vanishing gradients on genrator. When switching to $$ -\log D $$ alternative, the gradient has infinite variance, impling unstable training. The remedy could be either adding noise to descriminator or using softer distance measure such as _Wasserstein_.
 
 * ### [Wasserstein GAN](https://arxiv.org/pdf/1701.07875.pdf)
 Martin Arjovsky, Soumith Chintala, L´eon Bottou - Read on Mar 22, 2017
