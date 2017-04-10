@@ -59,14 +59,30 @@
 
 <ul>
   <li>
+    <h3 id="sampling-from-large-graphs"><a href="https://cs.stanford.edu/people/jure/pubs/sampling-kdd06.pdf">Sampling from Large Graphs</a></h3>
+    <p>Jure Leskovic, Christos Faloutsos - Read on Mar 30, 2017</p>
+  </li>
+</ul>
+
+<p>This paper did extensive experiments on sampling a representative sub-graph from a large graph. The authors proposed two types of goals - scale-down goal and back-in-time goal. The experiments showed that overall, random walk sampling and ‘forest fire’ sampling perform best, match most static and dynamic graph patterns well.</p>
+
+<ul>
+  <li>
+    <h3 id="automatic-chemical-design-using-a-data-driven-continuous-representation-of-molecules"><a href="https://arxiv.org/pdf/1610.02415.pdf">Automatic chemical design using a data-driven continuous representation of molecules</a></h3>
+    <p>Rafael Gomez-Bombarelli, David Duvenaud, Jose Miguel, Hernandez-Lobato, Jorge Aguilera-Iparraguirre, Timothy D. Hirzel, Ryan P. Adams, and Alan Aspuru-Guzik - Read on Mar 29, 2017</p>
+  </li>
+</ul>
+
+<p>The idea of this paper is inspiring. Casting combinatoric object to an auto encoder, we can work with its latent, continuous, low dimensional(compared to original encoding) representation, where we have a great deal of powerful continuous optimization tools instead of local search for discrete structure. However, one difficulty needs to be addressed, once we have a latent representation, how we can make sure it is a valid one? What if it encodes to a non-exist combinatoric structure?</p>
+
+<ul>
+  <li>
     <h3 id="towards-principled-methods-for-training-generative-adversarial-networks"><a href="https://arxiv.org/pdf/1701.04862.pdf">Towards Principled Methods for Training Generative Adversarial Networks</a></h3>
     <p>Martin Arjovsky, Léon Bottou - Read on Mar 23, 2017</p>
   </li>
 </ul>
 
-<p>Even if the real data generating distribution <script type="math/tex">P_{real}</script> and the fake generating distribution <script type="math/tex">P_g</script> lie on two arbitrarily close manifolds, under mild conditions, 
-<script type="math/tex">JS(P_{real} || P_g) = \log 2</script>,
-meaning that essentially, this distance measure of two probability distributions is not ‘continuous’. Moreover, the existence of optimal discriminator causes vanishing gradients on genrator. When switching to <script type="math/tex">-\log D</script> alternative, the gradient has infinite variance, impling unstable training. The remedy could be either adding noise to descriminator or using softer distance measure such as <em>Wasserstein</em>.</p>
+<p>Even if the real data generating distribution <script type="math/tex">P_{real}</script> and the fake generating distribution <script type="math/tex">P_g</script> lie on two arbitrarily close manifolds, under mild conditions, <script type="math/tex">JS(P_{real} \| P_g) = \log 2</script>, meaning that essentially, this distance measure of two probability distributions is not ‘continuous’. Moreover, the existence of optimal discriminator causes vanishing gradients on generator. When switching to <script type="math/tex">-\log D</script> alternative, the gradient has infinite variance, implying unstable training. The remedy could be either adding noise to discriminator or using softer distance measure such as <em>Wasserstein</em>.</p>
 
 <ul>
   <li>
@@ -75,8 +91,20 @@ meaning that essentially, this distance measure of two probability distributions
   </li>
 </ul>
 
-<p><em>Wasserstein distance</em> is  weaker than <em>Total Variance Distance (TV)</em> and <em>Jenson-Shannon Divergence (JS)</em>. Moreover, all above three metric are weaker than <em>Kullback-Leibler Divergence (KL)</em>. A weaker distance metric induces a weaker topology in the space of all probability measures, a favorable setting for common gradient-based optimization algorithms, where convergence is easier in weak topology. The intractability of Wasserstein distance can be resolved by using <em>Kantorovich-Rubinstein duality</em> and then we can optimize it over parameterized functions. Empirical results show that WGAN enjoys strong stability and is more robust to various network architechtures.</p>
+<p><em>Wasserstein distance</em> is  weaker than <em>Total Variance Distance (TV)</em> and <em>Jenson-Shannon Divergence (JS)</em>. Moreover, all above three metric are weaker than <em>Kullback-Leibler Divergence (KL)</em>. A weaker distance metric induces a weaker topology in the space of all probability measures, a favorable setting for common gradient-based optimization algorithms, where convergence is easier in weak topology. The intractability of Wasserstein distance can be resolved by using <em>Kantorovich-Rubinstein duality</em> and then we can optimize it over parameterized functions. Empirical results show that WGAN enjoys strong stability and is more robust to various network architectures.</p>
 
+<ul>
+  <li>
+    <h3 id="generative-adversarial-nets"><a href="https://arxiv.org/pdf/1406.2661.pdf">Generative Adversarial Nets</a></h3>
+    <p>Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair†, Aaron Courville, Yoshua Bengio - Read on Mar 21, 2017</p>
+  </li>
+</ul>
+
+<p><em>GAN</em> combines generative model and discriminative model, simultaneously training two neural networks to learn the generating probability of the data. The value function to maximize here is</p>
+
+<script type="math/tex; mode=display">\displaystyle \min_{G}\max_{D} V(D,G) = \mathbb{E}_{\boldsymbol{x} \sim p_{data}(\boldsymbol{x})} [\log D(\boldsymbol{x})] - \mathbb{E}_{\boldsymbol{x} \sim p_{x}(\boldsymbol{x})} [\log D(\boldsymbol{x})]</script>
+
+<p>and the paper showed convergence of the algorithm under reasonable condition. Actually, this creative framework can be extended to train various generative models.</p>
 
                         </section>
                         
