@@ -3,6 +3,7 @@ layout: post
 title: "One Paper a Day"
 author: Ruilin Li
 image: one-paper-a-day.jpg
+markdown: kramdown
 meta: "Inspired by Neal Jean's post on Medium, I decide to start my 2017 challenge, try to read one paper per day to keep track of the latest progress in the area of machine learning."
 ---
 
