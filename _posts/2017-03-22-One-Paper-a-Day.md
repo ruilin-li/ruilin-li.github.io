@@ -42,7 +42,6 @@ _Wasserstein distance_ is  weaker than _Total Variance Distance (TV)_ and _Jenso
 
 _GAN_ combines generative model and discriminative model, simultaneously training two neural networks to learn the generating probability of the data. The value function to maximize here is
 
-{: style = "text-align: center"}
 $$
 	\displaystyle \min_{G}\max_{D} V(D,G) = \mathbb{E}_{\boldsymbol{x} \sim p_{data}(\boldsymbol{x})} [\log D(\boldsymbol{x})] - \mathbb{E}_{\boldsymbol{x} \sim p_{x}(\boldsymbol{x})} [\log D(\boldsymbol{x})]    
 $$
