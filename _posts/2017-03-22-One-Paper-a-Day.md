@@ -9,6 +9,12 @@ meta: "Inspired by Neal Jean's post on Medium, I decide to start my 2017 challen
 
 Inspired by [Neal Jean's post](https://medium.com/@nealjean/2017-challenge-one-paper-a-day-9d7811accd09#.wqq4ozcim), I decide to start my 2017 challenge, try to read one paper per day to keep track of the latest progress in the area of machine learning.
 
+- ### [Algorithms for Inverse Reinforcement Learning](http://ai.stanford.edu/~ang/papers/icml00-irl.pdf)
+
+  Andrew Y. Ng, Stuart Russell - Read on May 22, 2017
+
+This paper did extensive experiments on sampling a representative sub-graph from a large graph. The authors proposed two types of goals - scale-down goal and back-in-time goal. The experiments showed that overall, random walk sampling and 'forest fire' sampling perform best, match most static and dynamic graph patterns well.
+
 
 
 * ### [Sampling from Large Graphs](https://cs.stanford.edu/people/jure/pubs/sampling-kdd06.pdf)
